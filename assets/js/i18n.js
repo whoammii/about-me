@@ -46,6 +46,7 @@ const translations = {
       select_category: 'Select category'
     }
   },
+  
   ru: {
     title: 'vCard - Личное портфолио',
     nav: {

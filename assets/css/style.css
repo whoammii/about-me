@@ -4,7 +4,7 @@
 
 
 /**
- * copyright 2022 @codewithsadee
+ * copyright 2025 @max_halimov
  */
 
 
@@ -554,7 +554,11 @@ main {
   z-index: -1;
 }
 
-.service-icon-box { margin-bottom: 10px; }
+.service-icon-box { 
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+ }
 
 .service-icon-box img { margin: auto; }
 
@@ -1302,10 +1306,16 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #REUSED STYLE
    */
 
-  .sidebar, article {
+  .sidebar {
     width: 520px;
     margin-inline: auto;
     padding: 30px;
+  }
+
+  article {
+    width: 520px;
+    margin-inline: auto;
+    padding: 15px 30px 30px 30px;
   }
 
   .article-title {

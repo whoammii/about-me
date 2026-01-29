@@ -94,19 +94,7 @@
 
           </li>
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <img src="./assets/images/calendar.svg" alt="Calendar" width="16">
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title" data-i18n="contact.birthday">Birthday</p>
-
-              <time datetime="2005-11-02">November 2, 2005</time>
-            </div>
-
-          </li>
+  
 
           <li class="contact-item">
 
@@ -183,7 +171,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link data-page="blog" data-i18n="nav.blog">Blog</button>
+            <button class="navbar-link" data-nav-link data-page="project" data-i18n="nav.project">Project</button>
           </li>
 
           <li class="navbar-item">
@@ -230,68 +218,67 @@
           - service
         -->
 
-        <section class="service">
-
+<section class="service">
           <h3 class="h3 service-title" data-i18n="service.title">What i'm doing</h3>
-
           <ul class="service-list">
 
+            <!-- 1. Frontend & React -->
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <ion-icon name="laptop-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title" data-i18n="service.web_design.title">Web design</h4>
-
-                <p class="service-item-text" data-i18n="service.web_design.text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title" data-i18n="service.web_development.title">Web development</h4>
-
+                <h4 class="h4 service-item-title" data-i18n="service.web_development.title">Frontend Development</h4>
                 <p class="service-item-text" data-i18n="service.web_development.text">
-                  High-quality development of sites at the professional level.
+                  Building modern SPAs and responsive websites using <strong>React.js</strong>. I focus on clean code, high performance, and seamless user experiences.
                 </p>
               </div>
-
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title" data-i18n="service.photography.title">Photography</h4>
-
-                <p class="service-item-text" data-i18n="service.photography.text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
             </li>
 
+            <!-- 2. Tilda / No-Code -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="rocket-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="service.tilda.title">Tilda / No-Code</h4>
+                <p class="service-item-text" data-i18n="service.tilda.text">
+                  Rapid launch of landing pages and e-commerce sites on <strong>Tilda</strong>. Perfect for startups and businesses that need a professional web presence fast.
+                </p>
+              </div>
+            </li>
+
+            <!-- 3. Video Production -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="videocam-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="service.video_production.title">Video Production</h4>
+                <p class="service-item-text" data-i18n="service.video_production.text">
+                  Professional shooting and editing (Reels, promo videos, ads). I create dynamic visual content that captures attention and tells a story.
+                </p>
+              </div>
+            </li>
+
+            <!-- 4. Graphic Design -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="brush-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="service.graphic_design.title">Graphic Design</h4>
+                <p class="service-item-text" data-i18n="service.graphic_design.text">
+                  Social media visuals (SMM), and creative advertising materials. I ensure your brand looks consistent and attractive.
+                </p>
+              </div>
+            </li>
           </ul>
-
         </section>
-
 
         <!--
           - testimonials
-        -->
+        
 
         <section class="testimonials">
 
@@ -389,12 +376,12 @@
 
           </ul>
 
-        </section>
+        </section>-->
 
 
         <!--
           - testimonials modal
-        -->
+        
 
         <div class="modal-container" data-modal-container>
 
@@ -434,7 +421,7 @@
 
           </section>
 
-        </div>
+        </div>-->
 
 
         <!--
@@ -720,16 +707,17 @@
             </li>
 
             <li class="filter-item">
+              <button data-filter-btn data-value="web development" data-i18n="filter.web_development">Web development</button>
+            </li>
+
+            <li class="filter-item">
               <button data-filter-btn data-value="web design" data-i18n="filter.web_design">Web design</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn data-value="applications" data-i18n="filter.applications">Applications</button>
+              <button data-filter-btn data-value="video production" data-i18n="filter.video_production">Video production</button>
             </li>
 
-            <li class="filter-item">
-              <button data-filter-btn data-value="web development" data-i18n="filter.web_development">Web development</button>
-            </li>
 
           </ul>
 
@@ -750,17 +738,17 @@
               <li class="select-item">
                 <button data-select-item data-value="all" data-i18n="filter.all">All</button>
               </li>
+              
+              <li class="select-item">
+                <button data-select-item data-value="web development" data-i18n="filter.web_development">Web development</button>
+              </li>
 
               <li class="select-item">
                 <button data-select-item data-value="web design" data-i18n="filter.web_design">Web design</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item data-value="applications" data-i18n="filter.applications">Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item data-value="web development" data-i18n="filter.web_development">Web development</button>
+                <button data-select-item data-value="video production" data-i18n="filter.video_production">Video production</button>
               </li>
 
             </ul>
@@ -770,7 +758,7 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a target="_blank" href="https://dilsuzi.tj">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -780,15 +768,15 @@
                   <img src="./assets/images/project-2.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Dilsuzi</h3>
 
                 <p class="project-category">Web development</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://maxhalimov.github.io/about-me-beta">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -798,16 +786,16 @@
                   <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">Site "About Me"</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Web development</p>
 
               </a>
             </li>
 
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a target="_blank" href="https://maxhalimov.github.io/nft-marketplace">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -817,9 +805,9 @@
                   <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Task Manager</h3>
+                <h3 class="project-title">NFT Marketplace</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Web design</p>
 
               </a>
             </li>
@@ -831,12 +819,103 @@
       </article>
 
 
+      <!-- #Project -->
+      <article class="project" data-page="project">
+        <header>
+          <h2 class="h2 article-title" style="display: flex; align-items: center; gap: 15px;">
+              <!-- Логотип с ограничением высоты -->
+              <img src="./assets/images/logoDark.svg" alt="uppulse logo" style="width: 150px;">
 
+          </h2>        
+        </header>
+        
+        <section class="about-text">
+          <p data-i18n="project.intro_1">
+            Welcome to <strong>uppulse</strong> — my digital space where technology meets creativity. 
+            It is not just a channel, but a community where I share my expertise in IT, design, and video production.
+          </p>
+          <p data-i18n="project.intro_2">
+            Here I publish what stays "behind the scenes" of commercial projects: insights, useful resources, 
+            and the authentic lifestyle of an IT specialist based in Dushanbe.
+          </p>
+        </section>
 
+        <section class="service">
+          <h3 class="h3 service-title" data-i18n="project.whats_inside">What's Inside?</h3>
+          <ul class="service-list">
+
+            <!-- 1. Web Development -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="code-slash-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="project.web_dev_title">Web Development</h4>
+                <p class="service-item-text" data-i18n="project.web_dev_text">
+                  Tips on React, frontend architecture, and modern web technologies. Real-world cases and code reviews.
+                </p>
+              </div>
+            </li>
+
+            <!-- 2. Video Production -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="videocam-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="project.video_title">Video Production</h4>
+                <p class="service-item-text" data-i18n="project.video_text">
+                  Editing, lighting, and filming techniques. I share project backstages and tips for creating dynamic video content.
+                </p>
+              </div>
+            </li>
+
+            <!-- 3. Design -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="color-palette-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="project.design_title">Design & Aesthetics</h4>
+                <p class="service-item-text" data-i18n="project.design_text">
+                   UI/UX analysis, typography, and visual inspiration for creating clean and user-friendly digital products.
+                </p>
+              </div>
+            </li>
+
+            <!-- 4. Lifestyle -->
+            <li class="service-item">
+              <div class="service-icon-box">
+                <ion-icon name="flash-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="project.lifestyle_title">Tech Lifestyle</h4>
+                <p class="service-item-text" data-i18n="project.lifestyle_text">
+                  Life of an IT specialist in Dushanbe: gadgets, workspace setup, and personal productivity hacks.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="about-text" style="margin-top: 30px; text-align: center;">
+          <div style="background: var(--eerie-black-2); padding: 30px; border-radius: 20px; border: 1px solid var(--jet); box-shadow: var(--shadow-2);">
+            <h3 class="h3" style="color: var(--white-2); margin-bottom: 15px; text-transform: none;" data-i18n="project.cta_title">Join uppulse</h3>
+            <p style="color: var(--light-gray); margin-bottom: 20px;" data-i18n="project.cta_text">
+              Stay updated with the latest news and get a daily dose of motivation.
+            </p>
+            <a href="https://t.me/uppulse" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; background: #2AABEE; color: white; padding: 12px 25px; border-radius: 10px; font-weight: 500; text-decoration: none; transition: 0.3s ease; box-shadow: var(--shadow-2);">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span data-i18n="project.cta_btn">Open Telegram</span>
+            </a>
+          </div>
+        </section>
+      </article>
 
       <!--
         - #BLOG
-      -->
+
 
       <article class="blog" data-page="blog">
 
@@ -883,7 +962,7 @@
         </section>
 
       </article>
-
+-->
 
 
 
