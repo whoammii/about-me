@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Mahmadali Halimov — Frontend Developer</title>
+  <meta name="description" content="Mahmadali Halimov — frontend developer, designer, and AI automation specialist.">
+  <meta property="og:title" content="Mahmadali Halimov — Frontend Developer">
+  <meta property="og:description" content="Frontend development, design, and AI automation.">
+  <meta property="og:type" content="website">
 
   <!--
     - favicon
@@ -18,11 +22,12 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!--
-    - google font link
+    - web font links
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://yastatic.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,500;1,600&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -68,14 +73,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <img src="./assets/images/email.svg" alt="Email" width="16">
-              <!-- <ion-icon name="mail-outline"></ion-icon> -->
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
             </div>
 
             <div class="contact-info">
               <p class="contact-title" data-i18n="contact.email">Email</p>
 
-              <a href="mailto:h_mahmadali@mail.ru" class="contact-link">h_mahmadali@mail.ru</a> 
+              <a href="mailto:maxhalimov@proton.me" class="contact-link">maxhalimov@proton.me</a>
             </div>
 
           </li>
@@ -83,7 +87,7 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <img src="./assets/images/phone-logo.svg" alt="Phone" width="16">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
             </div>
 
             <div class="contact-info">
@@ -96,20 +100,6 @@
 
   
 
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <img src="./assets/images/location.svg" alt="Location" width="16">
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title" data-i18n="contact.location">Location</p>
-
-              <address data-i18n="contact.city">Dushanbe, Tajikistan</address>
-            </div>
-
-          </li>
-
         </ul>
 
         <div class="separator"></div>
@@ -117,20 +107,8 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://t.me/dreamerinvoid" class="social-link">
+            <a href="https://t.me/dreamerinvoid" class="social-link" target="_blank" rel="noreferrer" aria-label="Telegram">
               <img src="./assets/images/telegram.svg" alt="telegram" width="20">
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <img src="./assets/images/whatsapp.svg" alt="whatsapp" width="18">
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <img src="./assets/images/github.svg" alt="github" width="20">
             </a>
           </li>
 
@@ -180,12 +158,12 @@
 
         </ul>
 
-        <div class="lang-switcher">
-          <button class="lang-btn" data-lang="en">EN</button>
-          <button class="lang-btn" data-lang="ru">RU</button>
-        </div>
+      </nav>
 
-      </nav> 
+      <div class="lang-switcher" aria-label="Language switcher">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
 
 
 
@@ -201,15 +179,34 @@
           <h2 class="h2 article-title" data-i18n="about.title">About me</h2>
         </header>
 
+        <section class="hero-intro" aria-labelledby="hero-title">
+          <p class="hero-eyebrow" data-i18n="about.eyebrow">Frontend developer · designer · AI automation</p>
+          <h3 class="hero-title" id="hero-title" data-i18n="about.hero_title">I turn digital ideas into clear, useful experiences.</h3>
+          <p class="hero-lead" data-i18n="about.hero_lead">I build responsive React interfaces, create visual systems, and automate routine work with AI.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://t.me/dreamerinvoid" target="_blank" rel="noreferrer">
+              <ion-icon name="paper-plane-outline"></ion-icon>
+              <span data-i18n="about.cta_contact">Write on Telegram</span>
+            </a>
+            <button class="button button-secondary" data-nav-link data-page="portfolio">
+              <span data-i18n="about.cta_work">View work</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+          <ul class="hero-facts" aria-label="Key highlights">
+            <li><strong>2020</strong><span data-i18n="about.fact_experience">in digital work</span></li>
+            <li><strong>30+</strong><span data-i18n="about.fact_videos">video projects</span></li>
+            <li><strong>React</strong><span data-i18n="about.fact_stack">and TypeScript</span></li>
+          </ul>
+        </section>
+
         <section class="about-text">
           <p data-i18n="about.p1">
-            I am an IT specialist from Dushanbe focused on web development and user interfaces for modern digital products.  
-            I enjoy turning complex requirements into clear, logical, and visually clean solutions.  
+            I build digital products at the intersection of frontend development, visual design, and AI tools — from the first idea to a polished, responsive result.
           </p>
 
           <p data-i18n="about.p2">
-            My job is to make your product stable, user-friendly, and aesthetically pleasing while keeping it easy to maintain and grow.  
-            My aim is to reflect your message and identity through a thoughtful combination of structure, interaction, and visual design.
+            My approach is simple: clear structure, reliable implementation, and visual details that help people understand the product faster.
           </p>
         </section>
 
@@ -225,12 +222,12 @@
             <!-- 1. Frontend & React -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="laptop-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                <ion-icon name="code-slash" aria-hidden="true"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title" data-i18n="service.web_development.title">Frontend Development</h4>
                 <p class="service-item-text" data-i18n="service.web_development.text">
-                  Building modern SPAs and responsive websites using <strong>React.js</strong>. I focus on clean code, high performance, and seamless user experiences.
+                  Building responsive websites and interfaces with React and TypeScript.
                 </p>
               </div>
             </li>
@@ -238,12 +235,12 @@
             <!-- 2. Tilda / No-Code -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="rocket-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                <ion-icon name="rocket" aria-hidden="true"></ion-icon>
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title" data-i18n="service.tilda.title">Tilda / No-Code</h4>
+                <h4 class="h4 service-item-title" data-i18n="service.tilda.title">No-code platforms</h4>
                 <p class="service-item-text" data-i18n="service.tilda.text">
-                  Rapid launch of landing pages and e-commerce sites on <strong>Tilda</strong>. Perfect for startups and businesses that need a professional web presence fast.
+                  Building clear, effective websites on Tilda, Webflow, and Framer for ideas that need to go live quickly.
                 </p>
               </div>
             </li>
@@ -251,12 +248,12 @@
             <!-- 3. Video Production -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="videocam-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                <ion-icon name="videocam" aria-hidden="true"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title" data-i18n="service.video_production.title">Video Production</h4>
                 <p class="service-item-text" data-i18n="service.video_production.text">
-                  Professional shooting and editing (Reels, promo videos, ads). I create dynamic visual content that captures attention and tells a story.
+                  Editing promotional, advertising, and social video that communicates the idea clearly.
                 </p>
               </div>
             </li>
@@ -264,12 +261,12 @@
             <!-- 4. Graphic Design -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="brush-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                <ion-icon name="color-palette" aria-hidden="true"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title" data-i18n="service.graphic_design.title">Graphic Design</h4>
                 <p class="service-item-text" data-i18n="service.graphic_design.text">
-                  Social media visuals (SMM), and creative advertising materials. I ensure your brand looks consistent and attractive.
+                  Creating visual materials for social media, presentations, and digital campaigns.
                 </p>
               </div>
             </li>
@@ -494,7 +491,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="school" aria-hidden="true"></ion-icon>
             </div>
 
             <h3 class="h3" data-i18n="resume.education.title">Education</h3>
@@ -504,44 +501,12 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" data-i18n="resume.education.ilmhona">Ilmhona Skills Accelerator School</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="resume.education.rosbiotech">Rosbiotech University</h4>
 
-              <span>2022 — 2024</span>
+              <span data-i18n="resume.education.rosbiotech_period">2024 — Present</span>
 
-              <p class="timeline-text" data-i18n="resume.education.ilmhona_text">
-                1. Front-end Developer Starter Program <br> 
-                2. Front-end Developer PRO program <br> 
-                - During the program, many modern and promising Front-end development technologies and tools were studied, practical skills were developed, and real projects were worked on.              
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title" data-i18n="resume.education.it_run">IT-RUN Academy</h4>
-
-              <span>2024</span>
-
-              <p class="timeline-text" data-i18n="resume.education.it_run_text">
-                React Developer Program<br>
-                - During the program, the popular React library was studied in depth<br>
-                - Practical skills were gained in building web applications using React
-                library.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title" data-i18n="resume.education.skillbox">The Skillbox educational platform</h4>
-
-              <span>2023 - 2024</span>
-
-              <p class="timeline-text" data-i18n="resume.education.skillbox_text">
-                Profession: Internet marketer<br>
-                - During the program, the main areas of internet marketing were studied:
-                target advertising, contextual advertising, SEO promotion,
-                email marketing, SMM and others.
+              <p class="timeline-text" data-i18n="resume.education.rosbiotech_text">
+                Bachelor's degree
               </p>
 
             </li>
@@ -554,7 +519,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase" aria-hidden="true"></ion-icon>
             </div>
 
             <h3 class="h3" data-i18n="resume.experience.title">Experience</h3>
@@ -564,39 +529,27 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" data-i18n="resume.experience.web_programmer">Web programmer</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="resume.experience.bonoor">Lead Frontend Developer — Bonoor Group</h4>
 
-              <span>2020 — Present</span>
+              <span data-i18n="resume.experience.bonoor_period">May 2026 — Present</span>
 
-              <p class="timeline-text" data-i18n="resume.experience.web_programmer_text">
-                - Website maintenance dilsuzi.tj
+              <p class="timeline-text" data-i18n="resume.experience.bonoor_text">
+                Built and maintained websites and landing pages with React and TypeScript.<br>
+                Created marketing visuals, presentations, and promotional content for AI products, including Agentum.<br>
+                Managed Git/GitHub workflows: branches, pull requests, and code review.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" data-i18n="resume.experience.graphic_designer">Graphic designer</h4>
-              <span>2021 — present</span>
+              <h4 class="h4 timeline-item-title" data-i18n="resume.experience.dilsuzi">IT Specialist — NGO “Dilsuzi”</h4>
+              <span data-i18n="resume.experience.dilsuzi_period">2020 — Present</span>
 
-              <p class="timeline-text" data-i18n="resume.experience.graphic_designer_text">
-                - Create designs for posters on social networks.<br>
-                - Logo design.<br>
-                - Typography.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title" data-i18n="resume.experience.videographer">Videographer</h4>
-
-              <span>2022 — present</span>
-
-              <p class="timeline-text" data-i18n="resume.experience.videographer_text">
-                - Participation in more than 30+ video projects.<br>
-                - Installation of commercials and promotional videos.<br>    
-                - Professional installation using specialized software.
+              <p class="timeline-text" data-i18n="resume.experience.dilsuzi_text">
+                Maintained the organization's website, dilsuzi.tj.<br>
+                Designed posters and typography for social media materials.<br>
+                Edited and produced 30+ video projects, including advertising and promotional videos.
               </p>
 
             </li>
@@ -614,67 +567,35 @@
             <li class="skills-item" >
 
               <div class="title-wrapper">
-                <h5 class="h5" data-i18n="resume.skills.web_programming">Web programming</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
+                <h5 class="h5" data-i18n="resume.skills.ai_automation">AI Agents &amp; Automation</h5>
               </div>
 
             </li>
 
             <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5" data-i18n="resume.skills.graphic_design">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5" data-i18n="resume.skills.videographer">Videographer</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-             <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Tilda</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-             <li class="skills-item">
 
               <div class="title-wrapper">
                 <h5 class="h5" data-i18n="resume.skills.touch_typing">Touch typing</h5>
-                <data value="95">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
               </div>
 
             </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" data-i18n="resume.skills.graphic_design">Graphic design (Figma, Canva)</h5>
+              </div>
+
+            </li>
+
+             <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" data-i18n="resume.skills.editing">Editing (Premiere Pro, Final Cut)</h5>
+              </div>
+
+            </li>
+
           </ul>
         </section>
 
@@ -693,6 +614,10 @@
         <header>
           <h2 class="h2 article-title" data-i18n="portfolio.title">Portfolio</h2>
         </header>
+
+        <section class="portfolio-intro">
+          <p data-i18n="portfolio.intro">A selection of web products where I combined interface design, development, and attention to detail.</p>
+        </section>
 
         <section class="projects">
 
@@ -758,7 +683,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/project-1.webp" alt="NFT Marketplace" loading="lazy">
@@ -767,6 +692,7 @@
                 <h3 class="project-title" data-i18n="portfolio.product.nft_marketplace">NFT Marketplace</h3>
 
                 <p class="project-category" data-i18n="portfolio.product.nft_marketplace_category">Web design</p>
+                <p class="project-summary" data-i18n="portfolio.product.nft_marketplace_summary">Marketplace concept with a focused product interface.</p>
 
               </a>
             </li>
@@ -776,7 +702,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/project-2.webp" alt="Dilsuzi" loading="lazy">
@@ -785,6 +711,7 @@
                 <h3 class="project-title" data-i18n="portfolio.product.dilsuzi">Dilsuzi</h3>
 
                 <p class="project-category" data-i18n="portfolio.product.dilsuzi_category">Web development</p>
+                <p class="project-summary" data-i18n="portfolio.product.dilsuzi_summary">Organization website: ongoing support, content, and visual materials.</p>
 
               </a>
             </li>
@@ -796,7 +723,7 @@
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
                   </div>
 
                   <img src="./assets/images/project-3.webp" alt="Portfolio Site" loading="lazy">
@@ -805,6 +732,7 @@
                 <h3 class="project-title" data-i18n="portfolio.product.portfolio_website">Site "About Me"</h3>
 
                 <p class="project-category" data-i18n="portfolio.product.portfolio_website_category">Web development</p>
+                <p class="project-summary" data-i18n="portfolio.product.portfolio_website_summary">Personal website built to present work and expertise clearly.</p>
 
               </a>
             </li>
@@ -828,12 +756,10 @@
         
         <section class="about-text">
           <p data-i18n="project.intro_1">
-            Welcome to <strong>uppulse</strong> — my digital space where technology meets creativity. 
-            It is not just a channel, but a community where I share my expertise in IT, design, and video production.
+            <strong>uppulse</strong> is my channel about practical technology, design, and creative work.
           </p>
           <p data-i18n="project.intro_2">
-            Here I publish what stays "behind the scenes" of commercial projects: insights, useful resources, 
-            and the authentic lifestyle of an IT specialist based in Dushanbe.
+            Here I share useful tools, project insights, and the process behind digital products.
           </p>
         </section>
 
@@ -844,7 +770,7 @@
             <!-- 1. Web Development -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="code-slash-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                <ion-icon name="code-slash" aria-hidden="true"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title" data-i18n="project.whats_inside.item1.title">Web Development</h4>
@@ -857,7 +783,7 @@
             <!-- 2. Video Production -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="videocam-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                <ion-icon name="videocam" aria-hidden="true"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title" data-i18n="project.whats_inside.item2.title">Video Production</h4>
@@ -870,7 +796,7 @@
             <!-- 3. Design -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="color-palette-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                <ion-icon name="color-palette" aria-hidden="true"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title" data-i18n="project.whats_inside.item3.title">Design & Aesthetics</h4>
@@ -883,7 +809,7 @@
             <!-- 4. Lifestyle -->
             <li class="service-item">
               <div class="service-icon-box">
-                <ion-icon name="flash-outline" style="font-size: 40px; color: var(--orange-yellow-crayola);"></ion-icon>
+                <ion-icon name="sparkles" aria-hidden="true"></ion-icon>
               </div>
               <div class="service-content-box">
                 <h4 class="h4 service-item-title" data-i18n="project.whats_inside.item4.title">Productivity & Lifestyle</h4>
@@ -900,7 +826,7 @@
           <div style="background: var(--eerie-black-2); padding: 30px; border-radius: 20px; border: 1px solid var(--jet); box-shadow: var(--shadow-2);">
             <h3 class="h3" style="color: var(--white-2); margin-bottom: 15px; text-transform: none;" data-i18n="project.cta.title">Join uppulse</h3>
             <p style="color: var(--light-gray); margin-bottom: 20px;" data-i18n="project.cta.text">
-              Stay updated with the latest news and get a daily dose of motivation.
+              Follow for practical ideas, useful tools, and new project notes.
             </p>
             <a href="https://t.me/uppulse" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; background: #2AABEE; color: white; padding: 12px 25px; border-radius: 10px; font-weight: 500; text-decoration: none; transition: 0.3s ease; box-shadow: var(--shadow-2);">
               <ion-icon name="paper-plane"></ion-icon>
@@ -974,15 +900,16 @@
           <h2 class="h2 article-title" data-i18n="contact.title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75401.81875156355!2d68.7502165745057!3d38.55776185504887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d16fd27bf89b%3A0xddf9378ddea1fd44!2z0JTRg9GI0LDQvdCx0LUsINCi0LDQtNC20LjQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1767873616636!5m2!1sru!2s" 
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!-- <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.8283486989947!2d68.77988431526085!3d38.57396997962266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d16d77e99c7f%3A0x7e3e9e6e9e9e9e9e!2sNisor%20Muhammad%20St%208%2F3%2C%20Dushanbe%2C%20Tajikistan!5e0!3m2!1sen!2s!4v1704715200000!5m2!1sen!2s"
-              width="400" height="300" loading="lazy"></iframe> -->
-          </figure>
+        <section class="contact-cta">
+          <div>
+            <p class="contact-cta-label" data-i18n="contact.cta_label">Have a project in mind?</p>
+            <h3 class="h3" data-i18n="contact.cta_title">Let's make it useful and beautiful.</h3>
+            <p data-i18n="contact.cta_text">The fastest way to reach me is Telegram or email.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="https://t.me/dreamerinvoid" target="_blank" rel="noreferrer"><ion-icon name="paper-plane-outline"></ion-icon><span>Telegram</span></a>
+            <a class="button button-secondary" href="mailto:maxhalimov@proton.me"><ion-icon name="mail-outline"></ion-icon><span data-i18n="contact.email">Email</span></a>
+          </div>
         </section>
 
       </article>

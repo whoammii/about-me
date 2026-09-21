@@ -73,7 +73,7 @@ for (let i = 0; i < selectItems.length; i++) {
     filterFunc(selectedValue);
 
   });
-} 
+}
 
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
@@ -138,6 +138,7 @@ for (let i = 0; i < formInputs.length; i++) {
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const navbarLinks = document.querySelectorAll(".navbar-link[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
@@ -150,11 +151,10 @@ for (let i = 0; i < navigationLinks.length; i++) {
       pages[j].classList.toggle('active', targetPage === pages[j].dataset.page);
     }
 
-    for (let k = 0; k < navigationLinks.length; k++) {
-      navigationLinks[k].classList.remove('active');
+    for (let k = 0; k < navbarLinks.length; k++) {
+      navbarLinks[k].classList.toggle('active', targetPage === navbarLinks[k].dataset.page);
     }
-    this.classList.add('active');
     window.scrollTo(0, 0);
 
   });
-} 
+}
